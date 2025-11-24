@@ -37,15 +37,14 @@ const Hero = () => {
             <Button 
               size="lg" 
               variant="secondary"
-              className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold px-8"
+              className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold px-8 shadow-lg"
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Let's Work Together <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
             <Button 
               size="lg" 
-              variant="outline"
-              className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 font-semibold px-8"
+              className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 font-semibold px-8 shadow-lg border-2 border-primary-foreground/20"
               asChild
             >
               <a href="/Ann_Wambui_Resume.pdf" download="Ann_Wambui_Resume.pdf">
