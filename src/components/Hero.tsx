@@ -1,11 +1,23 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Mail } from "lucide-react";
+import { ArrowRight, Download } from "lucide-react";
+import profileImage from "@/assets/ann-profile.jpg";
 
 const Hero = () => {
   return (
     <section className="gradient-hero py-20 px-4 md:py-32">
       <div className="container mx-auto max-w-6xl">
         <div className="animate-fade-in-up text-center text-primary-foreground">
+          {/* Profile Image */}
+          <div className="mb-8 flex justify-center">
+            <div className="relative">
+              <img 
+                src={profileImage} 
+                alt="Ann Wambui - Procurement Virtual Assistant" 
+                className="w-48 h-48 md:w-56 md:h-56 rounded-full object-cover border-4 border-primary-foreground/20 shadow-2xl"
+              />
+            </div>
+          </div>
+          
           <h1 className="mb-6 text-4xl font-bold tracking-tight md:text-6xl lg:text-7xl">
             Hi, I'm Ann Wambui
           </h1>
@@ -34,9 +46,12 @@ const Hero = () => {
               size="lg" 
               variant="outline"
               className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 font-semibold px-8"
-              onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
+              asChild
             >
-              View Services
+              <a href="/Ann_Wambui_Resume.pdf" download="Ann_Wambui_Resume.pdf">
+                <Download className="mr-2 h-5 w-5" />
+                Download Resume
+              </a>
             </Button>
           </div>
         </div>
