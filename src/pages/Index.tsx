@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import TechStack from "@/components/TechStack";
+import PastProjects from "@/components/PastProjects";
 import ValueProps from "@/components/ValueProps";
 import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
@@ -13,6 +14,7 @@ const Index = () => {
       <Hero />
       <Services />
       <TechStack />
+      <PastProjects />
       <ValueProps />
       <Testimonials />
       <Contact />
