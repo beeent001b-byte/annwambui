@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Download } from "lucide-react";
+import { LazyImage } from "@/components/ui/lazy-image";
 import profileImage from "@/assets/ann-profile.jpg";
 
 const Hero = () => {
@@ -9,11 +10,13 @@ const Hero = () => {
         <div className="animate-fade-in-up text-center text-primary-foreground">
           {/* Profile Image */}
           <div className="mb-8 flex justify-center">
-            <div className="relative">
-              <img 
+            <div className="relative w-48 h-48 md:w-56 md:h-56">
+              <LazyImage 
                 src={profileImage} 
                 alt="Ann Wambui - Procurement Virtual Assistant" 
-                className="w-48 h-48 md:w-56 md:h-56 rounded-full object-cover border-4 border-primary-foreground/20 shadow-2xl"
+                className="w-full h-full rounded-full object-cover border-4 border-primary-foreground/20 shadow-2xl"
+                loaderSize="lg"
+                loaderClassName="rounded-full"
               />
             </div>
           </div>
