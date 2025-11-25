@@ -1,4 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
+import { LazyImage } from "@/components/ui/lazy-image";
 import project1 from "@/assets/project-1.jpg";
 import project2 from "@/assets/project-2.jpg";
 import project3 from "@/assets/project-3.jpg";
@@ -45,13 +46,14 @@ const PastProjects = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
           {projects.map((project, index) => (
             <Card key={index} className="card-hover-effect overflow-hidden group">
-              <div className="relative overflow-hidden">
-                <img 
+              <div className="relative overflow-hidden h-64">
+                <LazyImage 
                   src={project.image} 
                   alt={project.title}
-                  className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  loaderSize="md"
                 />
-                <div className="absolute top-4 right-4">
+                <div className="absolute top-4 right-4 z-10">
                   <span className="px-3 py-1.5 bg-primary text-primary-foreground text-xs font-semibold rounded-full shadow-lg">
                     {project.category}
                   </span>
