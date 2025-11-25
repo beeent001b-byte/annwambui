@@ -3,7 +3,6 @@ import Services from "@/components/Services";
 import TechStack from "@/components/TechStack";
 import PastProjects from "@/components/PastProjects";
 import ValueProps from "@/components/ValueProps";
-import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
 
 const Index = () => {
@@ -16,7 +15,6 @@ const Index = () => {
       <TechStack />
       <PastProjects />
       <ValueProps />
-      <Testimonials />
       <Contact />
       
       <footer className="py-8 px-4 bg-muted/30 text-center text-sm text-muted-foreground">
