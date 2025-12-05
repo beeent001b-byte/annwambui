@@ -50,7 +50,7 @@ const Hero = () => {
               className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 font-semibold px-8 shadow-lg border-2 border-primary-foreground/20"
               asChild
             >
-              <a href="/Ann_Wambui_Resume.pdf" download="Ann_Wambui_Resume.pdf">
+              <a href="/MaryAnn_Wambui_Resume.pdf" download="MaryAnn_Wambui_Resume.pdf">
                 <Download className="mr-2 h-5 w-5" />
                 Download Resume
               </a>
