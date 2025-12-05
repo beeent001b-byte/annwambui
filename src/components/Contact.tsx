@@ -26,7 +26,7 @@ const Contact = () => {
                 className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold"
                 asChild
               >
-                <a href="mailto:annwambuiVA@email.com">
+                <a href="mailto:annwambuiVA@mail.com">
                   <Mail className="mr-2 h-5 w-5" />
                   Send a Message
                 </a>
@@ -37,7 +37,7 @@ const Contact = () => {
                 className="font-semibold"
                 asChild
               >
-                <a href="mailto:annwambuiVA@email.com?subject=Discovery Call Request&body=Hi Ann,%0D%0A%0D%0AI would like to schedule a discovery call to discuss how you can help with my business needs.%0D%0A%0D%0APlease let me know your availability.%0D%0A%0D%0AThank you!">
+                <a href="mailto:annwambuiVA@mail.com?subject=Discovery Call Request&body=Hi Ann,%0D%0A%0D%0AI would like to schedule a discovery call to discuss how you can help with my business needs.%0D%0A%0D%0APlease let me know your availability.%0D%0A%0D%0AThank you!">
                   <Mail className="mr-2 h-5 w-5" />
                   Request Discovery Call
                 </a>
@@ -47,20 +47,20 @@ const Contact = () => {
             <div className="space-y-4 max-w-md mx-auto">
               <div className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors">
                 <Mail className="h-5 w-5 text-primary flex-shrink-0" />
-                <a href="mailto:annwambuiVA@email.com" className="hover:underline">
-                  annwambuiVA@email.com
+                <a href="mailto:annwambuiVA@mail.com" className="hover:underline">
+                  annwambuiVA@mail.com
                 </a>
               </div>
               
               <div className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors">
                 <Linkedin className="h-5 w-5 text-primary flex-shrink-0" />
                 <a 
-                  href="https://www.linkedin.com/in/annwambui-va" 
+                  href="https://www.linkedin.com/in/annwambui" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="hover:underline"
                 >
-                  linkedin.com/in/annwambui-va
+                  linkedin.com/in/annwambui
                 </a>
               </div>
               
