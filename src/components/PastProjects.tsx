@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { LazyImage } from "@/components/ui/lazy-image";
+import { AnimatedSection, AnimatedItem } from "@/components/ui/animated-section";
 import project1 from "@/assets/project-1.jpg";
 import project2 from "@/assets/project-2.jpg";
 import project3 from "@/assets/project-3.jpg";
@@ -36,34 +37,36 @@ const PastProjects = () => {
   return (
     <section className="py-20 px-4 bg-secondary/30">
       <div className="container mx-auto max-w-6xl">
-        <div className="text-center mb-16">
+        <AnimatedSection className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Past Projects</h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Examples of templates, systems, and deliverables that showcase quality and attention to detail
           </p>
-        </div>
+        </AnimatedSection>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
           {projects.map((project, index) => (
-            <Card key={index} className="card-hover-effect overflow-hidden group">
-              <div className="relative overflow-hidden h-64">
-                <LazyImage 
-                  src={project.image} 
-                  alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                  loaderSize="md"
-                />
-                <div className="absolute top-4 right-4 z-10">
-                  <span className="px-3 py-1.5 bg-primary text-primary-foreground text-xs font-semibold rounded-full shadow-lg">
-                    {project.category}
-                  </span>
+            <AnimatedItem key={index} index={index}>
+              <Card className="card-hover-effect overflow-hidden group h-full">
+                <div className="relative overflow-hidden h-64">
+                  <LazyImage 
+                    src={project.image} 
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    loaderSize="md"
+                  />
+                  <div className="absolute top-4 right-4 z-10">
+                    <span className="px-3 py-1.5 bg-primary text-primary-foreground text-xs font-semibold rounded-full shadow-lg">
+                      {project.category}
+                    </span>
+                  </div>
                 </div>
-              </div>
-              <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-                <p className="text-muted-foreground">{project.description}</p>
-              </CardContent>
-            </Card>
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+                  <p className="text-muted-foreground">{project.description}</p>
+                </CardContent>
+              </Card>
+            </AnimatedItem>
           ))}
         </div>
       </div>
